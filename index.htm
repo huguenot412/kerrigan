@@ -1,0 +1,37 @@
+<!DOCTYPE html/>
+
+<html ng-app="myApp">
+<head>
+    <meta charset=utf-8>
+    <title>Math Games</title>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+</head>
+
+<body ng-controller="gameController"> 
+    <table>
+        <tr id="topRow">
+            <td id="topLeft" class="left" ng-click="checkTimer()">{{ nums[0] }}</td>
+            <td id="topMid" class="mid" ng-click="checkTimer()">{{ nums[1] }}</td>
+            <td id="topRight" class="right" ng-click="checkTimer()">{{ nums[2] }}</td>
+        </tr>
+        <tr id="midRow">
+            <td id="midLeft" class="left" ng-click="checkTimer()">{{ nums[3] }}</td>
+            <td id="midMid" class="mid" ng-click="checkTimer()">{{ nums[4] }}</td>
+            <td id="midRight" class="right" ng-click="checkTimer()">{{ nums[5] }}</td>
+        </tr>
+        <tr id="botRow">
+            <td id="botLeft" class="left green" ng-click="checkTimer()">{{ nums[6] }}</td>
+            <td id="botMid" class="mid" ng-click="checkTimer()">{{ nums[7] }}</td>
+            <td id="botRight" class="right" ng-click="checkTimer()">{{ nums[8] }}</td>
+        </tr>
+    </table>
+    <span id="timer">Timer: {{ timer }}</span>
+    <button id="shuffle" ng-click="getRandomNums()">Shuffle</button><br/>
+    <span>Set Range: </span><input type=number ng-model="maxNum" min="9"><br>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="app.js"></script> 
+    <script src="/controllers/game-controller.js"></script>   
+</body>    
+</html>

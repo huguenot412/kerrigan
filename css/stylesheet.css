@@ -1,0 +1,38 @@
+*{
+    font-family: Helvetica;
+}
+
+td {
+    height: 100px;
+    width: 100px;
+    border: solid black 1px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+tr {
+    width: 100%;
+}
+
+table {
+    width: 330px;
+    margin: auto;
+}
+
+td:hover {
+    background-color: firebrick;
+    color: white;
+}
+
+.green {
+    background-color: #24cc64;
+    color: white;
+}
+#timer {
+    margin: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
